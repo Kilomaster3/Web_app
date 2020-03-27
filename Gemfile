@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
-
+gem 'omniauth-facebook'
 gem 'bootstrap'
 gem 'simple_form'
 
