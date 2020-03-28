@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
-        sessions: 'users/sessions'
-      }  
   root to: 'pages#home'
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   #devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+
+  devise_scope :user do
+    get '/auth/facebook/callback' => 'users/omniauth_callbacks#facebook'
+  end
 end
