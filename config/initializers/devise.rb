@@ -124,7 +124,7 @@ Devise.setup do |config|
   # Send a notification email when the user's password is changed.
   # config.send_password_change_notification = false
   config.omniauth :facebook, '354415672145416', '2ed176f654051c42f486e3b7b15977fc',
-                  #callback_url: 'http://localhost:3000/users/auth/facebook/callback'
+                  # callback_url: 'http://localhost:3000/users/auth/facebook/callback'
                   callback_url: 'https://stark-anchorage-67181.herokuapp.com/'
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
